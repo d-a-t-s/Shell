@@ -49,10 +49,9 @@ void ejecutar_comandos(int cant_comandos, char*** comandos){
             else if ((strcmp(comandos[0][1], "guardar") == 0))
             {
                 guardar_favoritos();
-            }else{
-                printf("Error al ingresar el comando\n");
             }
-        }else if(!(comandos[0][2] == NULL)){
+        }
+            if(!(comandos[0][2] == NULL)){
             //Crea un archivo para guardar los favoritos de la estructura en un archivo entregado por el usuario
             if ((strcmp(comandos[0][1], "crear") == 0))
             {
@@ -77,13 +76,8 @@ void ejecutar_comandos(int cant_comandos, char*** comandos){
             else if ((strcmp(comandos[0][1], "cargar") == 0))
             {
                 cargar_favoritos(comandos[0][2]);
-            }else{
-                printf("Error al ingresar el comando\n");
             }
-        }else{
-            printf("Error al ingresar el comando\n");
         }
-        
     }
 
     else{

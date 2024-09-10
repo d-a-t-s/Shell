@@ -105,6 +105,7 @@ int main(int argc, char const *argv[])
                         }
                         sleep(x);
                         printf("\n%s\n",recordatorio);
+			printf("\e[38;5;198mCustom\e[38;5;45mShell:\e[38;5;190m%s\e[0m$ ",ruta);
                         return(0);
                     }
                 }
