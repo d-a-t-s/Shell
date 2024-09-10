@@ -17,6 +17,8 @@ Se pueden ejecutar comandos con argumentos adicionales y combinar la salida de e
 ls | wc -l
 ```
 
+Los comandos a continuacion, no permiten el uso de pipes. 
+
 ### Recordatorio 
 - `set recordatorio [segundos] [mensaje]:` Configura una alarma que desplegará un mensaje luego de los segundos especificados. Todo lo que venga después del 
 tiempo en segundos será considerado como mensaje.
