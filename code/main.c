@@ -6,6 +6,12 @@
 #include <string.h>
 #include <signal.h>
 #include "comandos.h"
+#include "favs.h"
+
+//Prefijo favs
+#define PREFIX "favs"
+//Largo del prefijo
+#define PREFIX_LEN (sizeof(PREFIX) - 1)
 
 int main(int argc, char const *argv[])
 {
@@ -54,6 +60,13 @@ int main(int argc, char const *argv[])
         if(strlen(entrada) == 0){
             continue;
         }
+	
+	//Condicional que agrega el comando ingresado a favoritos si es que este no inicia con "favs" 
+	if (strncmp(entrada, PREFIX, PREFIX_LEN) != 0) {
+        agregar_favorito(entrada);
+    	}
+
+
 
         char copia_entrada[sizeof(entrada)];
         strcpy(copia_entrada, entrada);
