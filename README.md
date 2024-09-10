@@ -3,6 +3,18 @@
 <h3 align="center">Sistemas Operativos</h3>
 
 ### Instrucciones de uso:
+Para compilar escriba la siguiente linea de comandos:
+```sh
+make main
+```
+Para ejecutar escriba la siguiente linea de comandos:
+```sh
+./main
+```
+Para eliminar los archivos .o escriba la siguiente linea de comandos:
+```sh
+make clean
+```
 
 ### Comandos:
 
